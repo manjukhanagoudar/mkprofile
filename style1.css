@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+* {
+box-sizing: border-box;
+}
+body {
+color: #2b2c48;
+font-family: "Jost", sans-serif;
+background-image: url('Images/Java-developer.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+min-height: 100vh;
+display: flex;
+flex-wrap: wrap;
+padding: 20px;
+}
+.card {
+max-width: 340px;
+margin: auto;
+overflow-y: auto;
+position: relative;
+z-index: 1;
+overflow-x: hidden;
+background-color: rgba(255, 255, 255, 1);
+display: flex;
+transition: 0.3s;
+flex-direction: column;
+border-radius: 10px;
+box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+
+.card-header {
+position: relative;
+display: flex;
+height: 200px;
+flex-shrink: 0;
+width: 100%;
+transition: 0.3s;
+}
+.card-header * {
+transition: 0.3s;
+}
+.card-cover {
+width: 100%;
+height: 100%;
+position: absolute;
+height: 150px;
+top: -20%;
+left: 0;
+will-change: top;
+background-size: cover;
+background-position: center;
+filter: blur(40px);
+
+}
+.card-avatar {
+width: 100px;
+height: 100px;
+box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2);
+border-radius: 50%;
+object-position: center;
+object-fit: cover;
+position: absolute;
+bottom: 35%;
+left: 35%;
+
+}
+.card-fullname {
+position: absolute;
+bottom: 0;
+font-size: 22px;
+font-weight: 700;
+text-align: center;
+white-space: nowrap;
+transform: translateY(-10px) translateX(-50%);
+left: 50%;
+}
+.card-jobtitle {
+position: absolute;
+bottom: 0;
+font-size: 11px;
+white-space: nowrap;
+font-weight: 500;
+opacity: 0.7;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+margin: 0;
+left: 50%;
+transform: translateX(-50%) translateY(-7px);
+}
+.card-main {
+position: relative;
+flex: 1;
+display: flex;
+padding-top: 10px;
+flex-direction: column;
+}
+.card-subtitle {
+font-weight: 700;
+font-size: 13px;
+margin-bottom: 8px;
+}
+.card-content {
+padding: 20px;
+}
+.card-desc {
+line-height: 1.6;
+color: #636b6f;
+font-size: 14px;
+margin: 0;
+font-weight: 400;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-social {
+display: flex;
+align-items: center;
+padding: 0 20px;
+margin-bottom: 30px;
+
+}
+.card-social svg {
+fill: #a5b5ce;
+width: 16px;
+display: block;
+
+
+}
+.card-social a {
+color: #8797a1;
+height: 32px;
+width: 32px;
+border-radius: 50%;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+transition: 0.3s;
+background-color: rgba(93, 133, 193, 0.05);
+border-radius: 50%;
+margin-right: 10px;
+transition: transform 1s;
+}
+#logo:hover {
+fill: #286ceb;
+transition:0.5;
+transform: scale(1.5);
+
+}
+#insta:hover{
+   fill: rgb(238, 50, 81);
+  transform: scale(1.5);
+}
+
+.card-buttons {
+display: flex;
+background-color: #fff;
+margin-left: 85px;
+position: sticky;
+bottom: 10px;
+left: 0;
+
+}
+.card-buttons button {
+user-select: none;
+background: 0;
+font-size: 13px;
+border: none;
+padding: 15px 5px;
+cursor: pointer;
+color: #585d75;
+transition: 0.3s;
+font-family: "Jost", sans-serif;
+font-weight: 500;
+background-color: #af1212;
+
+
+}
+
+.card-buttons button.is-active, .card-buttons button:hover {
+color: #796aaf;
+border-bottom: 2px solid #9b9fa5;
+border-radius: 20px;
+
+filter: drop-shadow(0px 5px 66px);
+background: linear-gradient(to bottom, rgba(8, 82, 114, 0) 0%, rgba(105, 99, 192, 0.2) 44%, rgba(211, 226, 255, 0.4) 100%);
+}
+
+@keyframes fadeIn {
+0% {
+opacity: 0;
+transform: translatey(40px);
+}
+100% {
+opacity: 1;
+}
+}
+
